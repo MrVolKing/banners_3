@@ -42,25 +42,98 @@
 		}
 
 		.wrapper{
-			background-color: #0b1c3a;;
+			background-image: url(./images/bg_300_250.jpg);
 			font-family: GothamPro;
-			padding: 20px 35px 0 42px;
+			padding: 34px  0 0 18px;
 			position: relative;
 			overflow: hidden;
 			cursor: pointer;
 		}
 
+		.block_bg{
+			background-image: url(./images/bg_screen1_300_250.png);
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 127px;
+			padding-top: 37px;
+			padding-left: 50px;
+
+			animation-name: block_bg;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+
+			transform: translateY(0%);
+			opacity: 1;
+		}
+
+		/* block_bg */
+
+		@keyframes block_bg {
+			0%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			13%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			14%  {
+				transform: translateY(0%);
+				opacity: 0;
+			}
+
+			30%{
+				transform: translateY(0%);
+				opacity: 0;
+			}
+
+			31%{
+				transform: translateY(120%);
+				opacity: 0;
+			}
+
+			36%{
+				transform: translateY(120%);
+				opacity: 0;
+			}
+
+			37%{
+				transform: translateY(120%);
+				opacity: 1;
+			}
+
+			80%  {
+				transform: translateY(120%);
+				opacity: 1;
+			}
+
+			81%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+		
+		
+			100% {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+		}
+
 
 /* title_main */
 		.title_main{
-			transform: translateY(0%);
+			transform: translateX(0%);
 			animation-name: title_main;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
 		}
 
 		.title_main p:first-child{
-			font-size: 20px;
+			font-size: 36px;
 			color: white;
 			text-transform: uppercase;
 			font-weight: bold;	
@@ -68,185 +141,99 @@
 
 		.title_main p:last-child{
 			font-size: 20px;
-			color: white;	
+			opacity: .6;
+			color: white;
+			text-transform: uppercase;	
 		}
 
-	/* title_main */
+		/* title_main */
 
 		@keyframes title_main {
 			0%  {
-				transform: translateY(0%);
+				transform: translateX(0%);
 				display: block;
 			}
 
 
-			10%  {
-				transform: translateY(0%);
+			13%  {
+				transform: translateX(0%);
 				display: block;
 			}
 
-			11%  {
-				transform: translateY(200%);
-				display: none;
+			14%  {
+				transform: translateX(180%);
 			}
 
-			77%  {
-				transform: translateY(200%);
+			80%  {
+				transform: translateX(180%);
 			}
 
-			78%  {
-				transform: translateY(0%);
+			81%  {
+				transform: translateX(180%);
+			}
+
+			99%{
+				transform: translateX(180%);
 			}
 		
 			100% {
-				transform: translateY(0%);
-				display: none;
+				transform: translateX(180%);
 			}
 		}
 	
-/* title_main_2 */
-		.title_main_2{
-			transform: translateX(-150%);
-			animation-name: title_main_2;
-			animation-duration: 15s;
-			animation-iteration-count: infinite;
-			padding-right: 50px;
-			position: absolute;
-			top: 15px;
-			left: 26px;
-		}
-
-		.title_main_2 p:first-child{
-			font-size: 12px;
-			color: white;
-			text-transform: uppercase;
-			font-weight: bold;	
-		}
-
-		.title_main_2 p:last-child{
-			font-size: 12px;
-			color: white;	
-		}
-
-	/* title_main_2 */
-
-		@keyframes title_main_2 {
-			0%  {
-				transform: translateX(-150%);
-				display: block;
-			}
-
-
-			10%  {
-				transform: translateX(-150%);
-				display: block;
-			}
-
-			11%  {
-				transform: translateX(0%);
-				display: none;
-			}
-
-			77%  {
-				transform: translateX(0%);
-			}
-
-			78%  {
-				transform: translateX(-150%);
-			}
-		
-			100% {
-				transform: translateX(-150%);
-				display: none;
-			}
-		}
 
 
 /* logo_main */
+		.logo_block{
+			position: absolute;
+			left: 41px;
+			bottom: 40px;
+		}
 
 		.logo_block img{
-			transform: translateY(0%);
+			opacity: 1;
 			animation-name: logo;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
-			padding-bottom: 20px;
+			transform: translateY(0%);
 		}		
 
-	/* logo */
+		/* logo */
 
 		@keyframes logo {
 			0%  {
+				opacity: 1;
 				transform: translateY(0%);
 			}
 
-			10%{
+			13%{
+				opacity: 1;
 				transform: translateY(0%);
 			}
 
-			11%  {
-				transform: translateY(-100%);
-			}
-
-			77%  {
-				transform: translateY(-100%);
-			}
-
-			78%  {
+			14%  {
+				opacity: 0;
 				transform: translateY(0%);
 			}
 
-			99%  {
-				transform: translateY(0%);
+			80%  {
+				opacity: 0;
+				transform: translateY(113%);
+			}
+
+			81%  {
+				opacity: 0;
+				transform: translateY(113%);
+			}
+
+			99%{
+				opacity: 0;
+				transform: translateY(113%);
 			}
 		
 			100% {
+				opacity: 1;
 				transform: translateY(0%);
-			}
-		}
-
-
-/* logo_main_2 */
-
-		.logo_block_2 img{
-			transform: translateX(380%);
-			animation-name: logo_2;
-			animation-duration: 15s;
-			animation-iteration-count: infinite;
-
-			position: absolute;
-			right: 25px;
-			top: 21px;
-		}		
-
-	/* logo */
-
-		@keyframes logo_2 {
-			0%  {
-				transform: translateX(380%);
-			}
-
-			10%{
-				transform: translateX(380%);
-			}
-
-			11%  {
-				transform: translateX(0%);
-			}
-
-			77%  {
-				transform: translateX(0%);
-			}
-
-			78%  {
-				transform: translateX(200%);
-			}
-		
-			99% {
-				transform: translateX(200%);
-			}
-
-			100%{
-				transform: translateX(200%);
 			}
 		}
 
@@ -257,13 +244,12 @@
 			position: absolute;
 			width: 100%;
 			height: 149px;
-			padding: 39px 0 20px 25px;
 			z-index: 10000;
-			bottom: -2px;
+			bottom: 0;
 			left: 0;
-			transform: translateY(110%);
-			background-image: url(./images/green_300_250.png);
-			background-repeat: no-repeat;
+			transform: translateY(113%);
+			opacity: 1;
+			background-image: url(./images/screen2_300_250.png);
 
 			animation-name: screen2;
 			animation-duration: 15s;
@@ -275,99 +261,114 @@
 
 		@keyframes screen2 {
 			0%  {
-				transform: translateY(110%);
-				
-			}
-
-			10%  {
-				transform: translateY(110%);
-			
-			}
-
-			11%  {
-				transform: translateY(0%);
-				
-			}
-
-			33%  {
-				transform: translateX(0%);
+				transform: translateY(113%);
 				opacity: 1;
 				
 			}
 
-			34%  {
-				transform: translateX(0%);
+			13%  {
+				transform: translateY(113%);
+				opacity: 1;
+			
+			}
+
+			14%  {
+				transform: translateY(0%);
+				opacity: 1;
+				
+			}
+
+			36%  {
+				transform: translateY(0%);
+				opacity: 1;
+				
+			}
+
+			37%  {
+				transform: translateY(0%);
 				opacity: 0;
 				
 			}
 		
 			100% {
-				transform: translateX(0%);
+				transform: translateY(0%);
 				opacity: 0;
 			
 			}
 		}
 
-		.screen2 .title p{
-			font-size: 21px;
-			color: white;
+
+	/* title2 */
+
+		.title2{
+			position: absolute;
+			top: 18px;
+			left: 25px;
+
+			transform: translateX(-120%);
+
+			animation-name: title2;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
 		}
 
-		.screen2 .title p span{
+		.title2 p:first-child{
+			font-size: 42px;
+			color: white;
 			font-weight: bold;
 		}
 
-		
-
-/* img2 */
-
-		.block_img_2{
-			transform: translateX(150%);
-			animation-name: img2;
-			animation-duration: 15s;
-			animation-iteration-count: infinite;
-			position: absolute;
-			z-index: 100000;
-			right: 0;
-			bottom: 22px;
+		.title2 p:last-child{
+			font-size: 16px;
+			opacity: .6;
+			color: white;
+			text-transform: uppercase;
 		}
 
-		@keyframes img2 {
+		/* title2 */
+
+		@keyframes title2 {
 			0%  {
-				transform: translateX(150%);
+				transform: translateX(-120%);
+				
 				
 			}
 
-			10%  {
-				transform: translateX(150%);
-				display: block;
+			13%  {
+				transform: translateX(-120%);
 			
 			}
 
-			11%  {
+			14%  {
 				transform: translateX(0%);
-				display: block;
 				
 			}
 
-			33%  {
+			36%  {
 				transform: translateX(0%);
-				display: block;
-				opacity: 1;
 				
 			}
 
-			34%  {
-				transform: translateX(0%);
-				display: block;
-				opacity: 0;
+			37%  {
+				transform: translateX(150%);
 				
 			}
 		
 			100% {
-				transform: translateX(0%);
-				opacity: 0;
+				transform: translateX(150%);
+			
 			}
+		}
+
+		
+
+	/* img2 */
+
+		.screen2 .block_img{
+			position: absolute;
+			z-index: 100000;
+			right: 33px;
+			bottom: -3px;
 		}
 
 
@@ -376,14 +377,13 @@
 		.screen3{
 			position: absolute;
 			width: 100%;
-			height: 142px;
-			padding: 58px 0 0 25px;
+			height: 153px;
 			z-index: 10000;
 			bottom: 0;
 			left: 0;
-			transform: translateY(150%);
-			background-image: url(./images/blue_300_250.png);
-			background-repeat: no-repeat;
+			transform: translateY(113%);
+			opacity: 1;
+			background-image: url(./images/screen3_300_250.png);
 
 			animation-name: screen3;
 			animation-duration: 15s;
@@ -395,111 +395,127 @@
 
 		@keyframes screen3 {
 			0%  {
-				transform: translateY(150%);
-				
-			}
-
-			10%  {
-				transform: translateY(150%);
-			
-			}
-
-			11%  {
-				transform: translateY(150%);	
-			}
-
-			33%  {
-				transform: translateY(150%);
-				
-			}
-
-			34%  {
-				transform: translateX(0%);
-			}
-
-			56%  {
-				transform: translateX(0%);
+				transform: translateY(113%);
 				opacity: 1;
-				
 			}
 
-			57%  {
-				transform: translateX(0%);
+			13%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			14%  {
+				transform: translateY(113%);	
+				opacity: 1;
+			}
+
+			36%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			37%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			59%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			60%  {
+				transform: translateY(0%);
 				opacity: 0;
-				
 			}
 		
 			100% {
-				transform: translateX(0%);
+				transform: translateY(0%);
 				opacity: 0;
-			
 			}
 		}
 
-		.screen3 .title p{
-			font-size: 20px;
-			color: white;
-		}
+	/* title3 */
 
-		.screen3 .title p span{
+		.title3{
+			position: absolute;
+			top: 17px;
+			left: 25px;
+
+			transform: translateX(-120%);
+
+			animation-name: title3;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+		}
+		
+		.title3 p:first-child{
+			font-size: 32px;
+			color: white;
 			font-weight: bold;
 		}
 
-
-/* img3 */
-
-		.block_img_3{
-			transform: translateX(180%);
-			animation-name: img3;
-			animation-duration: 15s;
-			animation-iteration-count: infinite;
-			position: absolute;
-			z-index: 100000;
-			right: 0px;
-			bottom: 45px;
+		.title3 p:last-child{
+			font-size: 16px;
+			color: white;
+			opacity: .6;
+			text-transform: uppercase;
 		}
 
-		@keyframes img3 {
+		/* title3 */
+
+		@keyframes title3 {
 			0%  {
-				transform: translateX(180%);
+				transform: translateX(-120%);
+				
 				
 			}
 
-			10%  {
-				transform: translateX(180%);
+			13%  {
+				transform: translateX(-120%);
 			
 			}
 
-			11%  {
-				transform: translateX(180%);	
-			}
-
-			33%  {
-				transform: translateX(180%);
+			14%  {
+				transform: translateX(-120%);
 				
 			}
 
-			34%  {
-				transform: translateX(0%);
-			}
-
-			56%  {
-				transform: translateX(0%);
-				opacity: 1;
+			36%  {
+				transform: translateX(-120%);
 				
 			}
 
-			57%  {
+			37%  {
+				transform: translateX(0%);	
+			}
+
+			59%  {
 				transform: translateX(0%);
-				opacity: 0;
+				
+			}
+
+			60%  {
+				transform: translateX(150%);
 				
 			}
 		
 			100% {
-				transform: translateX(0%);
-				opacity: 0;
+				transform: translateX(150%);
 			
 			}
+		}
+
+
+
+	/* img3 */
+
+		.screen3 .block_img{
+			position: absolute;
+			z-index: 100000;
+			right: 0;
+			bottom: 0;
+			opacity: 1;
 		}
 
 
@@ -508,14 +524,13 @@
 		.screen4{
 			position: absolute;
 			width: 100%;
-			height: 126px;
-			padding: 16px 0 0 25px;
+			height: 149px;
 			z-index: 10000;
-			bottom: -4px;
+			bottom: 0;
 			left: 0;
-			transform: translateY(150%);
-			background-image: url(./images/red_300_250.png);
-			background-repeat: no-repeat;
+			transform: translateY(113%);
+			opacity: 1;
+			background-image: url(./images/screen2_300_250.png);
 
 			animation-name: screen4;
 			animation-duration: 15s;
@@ -527,133 +542,136 @@
 
 		@keyframes screen4 {
 			0%  {
-				transform: translateY(150%);
-				
-			}
-
-			10%  {
-				transform: translateY(150%);
-			
-			}
-
-			11%  {
-				transform: translateY(150%);	
-			}
-
-			33%  {
-				transform: translateY(150%);
-				
-			}
-
-			34%  {
-				transform: translateY(150%);
-				
-			}
-
-			56%  {
-				transform: translateY(150%);
-				
-			}
-
-			57%  {
-				transform: translateX(0%);
-			}
-
-			77%  {
-				transform: translateX(0%);
+				transform: translateY(113%);
 				opacity: 1;
-				
 			}
 
-			78%  {
-				transform: translateX(0%);
+			13%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			14%  {
+				transform: translateY(113%);
+				opacity: 1;	
+			}
+
+			36%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			37%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			59%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			60%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			80%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			81%  {
+				transform: translateY(0%);
 				opacity: 0;
-				
 			}
 		
 			100% {
-				transform: translateX(0%);
+				transform: translateY(0%);
 				opacity: 0;
-			
 			}
 		}
 
-		.screen4 .title p{
-			font-size: 20px;
-			color: white;
+	/* title4 */
+
+		.title4{
+			position: absolute;
+			top: 16px;
+			left: 25px;
+
+			transform: translateX(-120%);
+
+			animation-name: title4;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
 		}
 
-		.screen4 .title p span{
+		.title4 p:first-child{
+			font-size: 40px;
+			color: white;
 			font-weight: bold;
 		}
 
-
-/* block_img_4 */
-
-		.block_img_4{
-			transform: translateX(180%);
-			animation-name: img4;
-			animation-duration: 15s;
-			animation-iteration-count: infinite;
-			position: absolute;
-			z-index: 100000;
-			right: 20px;
-			bottom: 20px;
+		.title4 p:last-child{
+			font-size: 16px;
+			color: white;
+			opacity: .6;
+			text-transform: uppercase;
 		}
 
-		@keyframes img4 {
+		/* title4 */
+
+		@keyframes title4 {
 			0%  {
-				transform: translateX(180%);
-				
+				transform: translateX(-120%);
 			}
 
-			10%  {
-				transform: translateX(180%);
-			
+			13%  {
+				transform: translateX(-120%);
 			}
 
-			11%  {
-				transform: translateX(180%);	
+			14%  {
+				transform: translateX(-120%);
 			}
 
-			33%  {
-				transform: translateX(180%);
-				
+			36%  {
+				transform: translateX(-120%);
 			}
 
-			34%  {
-				transform: translateX(180%);
-				
+			37%  {
+				transform: translateX(-120%);	
 			}
 
-			56%  {
-				transform: translateX(180%);
-				
+			59%  {
+				transform: translateX(-120%);
 			}
 
-			57%  {
+			60%  {
 				transform: translateX(0%);
 			}
 
-			77%  {
+			80%  {
 				transform: translateX(0%);
-				opacity: 1;
-				
 			}
 
-			78%  {
-				transform: translateX(0%);
-				opacity: 0;
-				
+			81%  {
+				transform: translateX(170%);
 			}
 		
 			100% {
-				transform: translateX(0%);
-				opacity: 0;
-			
+				transform: translateX(170%);
 			}
 		}
 
+
+	/* block_img_4 */
+
+		.screen4 .block_img{
+			position: absolute;
+			z-index: 100000;
+			right: 0;
+			bottom: -3px;
+		}
 
 /* screen5 */
 
@@ -665,48 +683,47 @@
 			
 		}
 
-	/* screen5 */
 		@keyframes screen5 {
 			0%  {
-				transform: translateX(-110%);
+				transform: translateX(-113%);
 				
 			}
 
-			10%  {
-				transform: translateX(-110%);
+			13%  {
+				transform: translateX(-113%);
 			
 			}
 
-			11%  {
-				transform: translateX(-110%);	
+			14%  {
+				transform: translateX(-113%);	
 			}
 
-			33%  {
-				transform: translateX(-110%);
+			36%  {
+				transform: translateX(-113%);
 				
 			}
 
-			34%  {
-				transform: translateX(-110%);
+			37%  {
+				transform: translateX(-113%);
 				
 			}
 
-			56%  {
-				transform: translateX(-110%);
+			59%  {
+				transform: translateX(-113%);
 				
 			}
 
-			57%  {
-				transform: translateX(-110%);
+			60%  {
+				transform: translateX(-113%);
 				
 			}
 
-			77%  {
-				transform: translateX(-110%);
+			80%  {
+				transform: translateX(-113%);
 				
 			}
 
-			78%  {
+			81%  {
 				transform: translateX(0%);
 				
 			}
@@ -717,14 +734,90 @@
 			}
 		}
 
-		.screen5 .block_button{
-			display: flex;
-			justify-content: center;
+
+/* title5 */
+
+		.title5{
+			position: absolute;
+			top: 30px;
+			left: 25px;
+
+			transform: translateX(-120%);
+
+			animation-name: title5;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+
 		}
 
+		.title5 p:first-child{
+			font-size: 34px;
+			color: white;
+			font-weight: bold;
+			line-height: 30px;
+		}
+
+		.title5 p:last-child{
+			font-size: 16px;
+			color: white;
+			opacity: .6;
+		}
+
+	/* title5 */
+
+		@keyframes title5 {
+			0%  {
+				transform: translateX(-120%);
+			}
+
+			13%  {
+				transform: translateX(-120%);
+			}
+
+			14%  {
+				transform: translateX(-120%);
+			}
+
+			36%  {
+				transform: translateX(-120%);
+			}
+
+			37%  {
+				transform: translateX(-120%);	
+			}
+
+			59%  {
+				transform: translateX(-120%);
+			}
+
+			60%  {
+				transform: translateX(-120%);
+			}
+
+			80%  {
+				transform: translateX(-120%);
+			}
+
+			81%  {
+				transform: translateX(0%);
+			}
+
+			99%{
+				transform: translateX(0%);
+			}
+		
+			100% {
+				transform: translateX(150%);
+			}
+		}
+
+
+
+	/* button */
+
 		.screen5 .block_button .button{
-			width: 203px;
-			height: 48px;
+			width: 216px;
+			height: 51px;
 			border: 2px solid #38eb51;
 			border-radius: 32px;
 			display: flex;
@@ -734,62 +827,65 @@
 			background: none;
 			font-size: 18px;
 
-			transform: translateY(150%);
+			transform: translateY(250%);
 			animation-name: button;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
+
+			opacity: 1;
+			margin: 0 auto;
 		}
 
-	/* button */
+
 		@keyframes button {
 			0%  {
-				transform: translateY(150%);
+				transform: translateY(250%);
 				background: none;
-				
+				opacity: 1;
 			}
 
-			10%  {
-				transform: translateY(150%);
+			13%  {
+				transform: translateY(250%);
 				background: none;
 			
 			}
 
-			11%  {
-				transform: translateY(150%);
+			14%  {
+				transform: translateY(250%);
 				background: none;	
 			}
 
-			33%  {
-				transform: translateY(150%);
+			36%  {
+				transform: translateY(250%);
 				background: none;
 				
 			}
 
-			34%  {
-				transform: translateY(150%);
+			37%  {
+				transform: translateY(250%);
 				background: none;
 				
 			}
 
-			56%  {
-				transform: translateY(150%);
+			59%  {
+				transform: translateY(250%);
 				background: none;
 				
 			}
 
-			57%  {
-				transform: translateY(150%);
+			60%  {
+				transform: translateY(250%);
 				background: none;
 				
 			}
 
-			77%  {
-				transform: translateY(150%);
+			80%  {
+				transform: translateY(250%);
 				background: none;
 				
 			}
 
-			78%  {
+			81.6%  {
 				transform: translateY(0%);
 				background: none;
 			}
@@ -829,12 +925,13 @@
 			99%{
 				transform: translateY(0%);
 				background: none;
+				opacity: 1;
 			}
 		
 			100% {
-				transform: translateY(300%);
+				transform: translateY(0%);
 				background: none;
-			
+				opacity: 0;
 			}
 		}
 
@@ -842,52 +939,48 @@
 	</style>
 
 	<div class="wrapper" style=" width: 300px; height: 250px;">
+
+		<div class="block_bg"></div>
 		
 		<div class="logo_block">
-				<img src="./images/Logo_300_250.png" alt="">
-		</div>
-
-		<div class="logo_block_2">
-			<img src="./images/logo_small_300_250.png" alt="">
+				<img src="./images/logo_300_250.png" alt="">
 		</div>
 
 		<div class="title_main">
 			<p>Инвестируй</p>
-			<p>в токены регулируемой  биржи</p>
-		</div>
-
-		<div class="title_main_2">
-			<p>Инвестируй</p>
-			<p>в токены<br> регулируемой биржи</p>
+			<p>в токены биржи</p>
 		</div>
 
 
 		<div class="screen2">
-			<div class="title">
-				<p>Уставной<br> фонд<br> проекта <span><br>958 000$</span></p>
-			</div>
+			<div class="block_img"><img src="./images/safe_300_250.png" alt=""></div>
+			
 		</div>
 
-		<div class="block_img_2"><img src="./images/Safe_300_250.png" alt=""></div>
-			
+		<div class="title2">
+			<p>958 000$ </p>
+			<p>Уставной фонд<br> проекта</p>
+		</div>
+		
 
 		<div class="screen3">
-			<div class="title">
-				<p><span>Партнерство</span><br> с международной <br>биржей OKEx</p>
-			</div>
+			<div class="block_img"><img src="./images/handshake_illustration_300_250.png" alt=""></div>
 		</div>
 
-		<div class="block_img_3"><img src="./images/handshake_ill_300_250.png" alt=""></div>
-		
+		<div class="title3">
+			<p>Партнерство</p>
+			<p>с международной <br>биржей OKEx</p>
+		</div>
+
 
 		<div class="screen4">
-			<div class="title">
-				<p><span>Аудит</span><br> компанией<br> из Большой<br> четверки</p>
-			</div>
+			<div class="block_img"><img src="./images/audit_illustration_300_250.png" alt=""></div>
 		</div>
 
-		<div class="block_img_4"><img src="./images/audit_ill_300_250.png" alt=""></div>
-		
+		<div class="title4">
+			<p>Аудит</p> 
+			<p>компанией из<br> Большой четверки</p>
+		</div>
 
 		<div class="screen5">
 			<div class="block_button">
@@ -895,7 +988,13 @@
 			</div>
 		</div>
 
+		<div class="title5">
+			<p>Выгодные<br> условия</p> 
+			<p>для инвесторов</p>
+		</div>
+
 	</div>
 	
 </body>
 </html>
+
