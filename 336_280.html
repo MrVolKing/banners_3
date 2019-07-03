@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+
+	<style>
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		@font-face {
+			font-family: GothamPro;
+			src: url('./fonts/GothamPro-Bold.eot');
+			src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+				url('./fonts/GothamPro-Bold.woff') format('woff'),
+				url('./fonts/GothamPro-Bold.ttf') format('truetype'),
+				url('./fonts/GothamPro-Bold.svg') format("svg"),
+				url('./fonts/GothamPro-Bold.otf') format("otf"),
+				url('./fonts/GothamPro-Bold.woff2') format("woff2");
+			font-weight: bold;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: GothamPro;
+			src: url('./fonts/GothamPro.eot');
+			src: local('Gotham Pro'), local('GothamPro'),
+				url('./fonts/GothamPro.woff') format('woff'),
+				url('./fonts/GothamPro.ttf') format('truetype'),
+				url('./fonts/GothamPro.svg') format("svg"),
+				url('./fonts/GothamPro.otf') format("otf"),
+				url('./fonts/GothamPro.woff2') format("woff2");
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		.wrapper{
+			background-image: url(./images/bg_336_280.jpg);
+			font-family: GothamPro;
+			padding: 50px  0 0 42px;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+		}
+
+		.block_bg{
+			background-image: url(./images/bg_screen1_336_280.png);
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 142px;
+			padding-top: 56px;
+			padding-left: 66px;
+
+			animation-name: block_bg;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+
+			transform: translateY(0%);
+			opacity: 1;
+		}
+
+		/* block_bg */
+
+		@keyframes block_bg {
+			0%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			13%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			14%  {
+				transform: translateY(0%);
+				opacity: 0;
+			}
+
+			30%{
+				transform: translateY(0%);
+				opacity: 0;
+			}
+
+			31%{
+				transform: translateY(120%);
+				opacity: 0;
+			}
+
+			36%{
+				transform: translateY(120%);
+				opacity: 0;
+			}
+
+			37%{
+				transform: translateY(120%);
+				opacity: 1;
+			}
+
+			80%  {
+				transform: translateY(120%);
+				opacity: 1;
+			}
+
+			81%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+		
+		
+			100% {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+		}
+
+
+/* title_main */
+		.title_main{
+			transform: translateX(0%);
+			animation-name: title_main;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+		}
+
+		.title_main p:first-child{
+			font-size: 36px;
+			color: white;
+			text-transform: uppercase;
+			font-weight: bold;	
+		}
+
+		.title_main p:last-child{
+			font-size: 20px;
+			opacity: .6;
+			color: white;
+			text-transform: uppercase;	
+		}
+
+		/* title_main */
+
+		@keyframes title_main {
+			0%  {
+				transform: translateX(0%);
+				display: block;
+			}
+
+
+			13%  {
+				transform: translateX(0%);
+				display: block;
+			}
+
+			14%  {
+				transform: translateX(180%);
+			}
+
+			80%  {
+				transform: translateX(180%);
+			}
+
+			81%  {
+				transform: translateX(180%);
+			}
+
+			99%{
+				transform: translateX(180%);
+			}
+		
+			100% {
+				transform: translateX(180%);
+			}
+		}
+	
+
+
+/* logo_main */
+		.logo_block{
+			position: absolute;
+			left: 66px;
+			bottom: 35px;
+		}
+
+		.logo_block img{
+			opacity: 1;
+			animation-name: logo;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+			transform: translateY(0%);
+		}		
+
+		/* logo */
+
+		@keyframes logo {
+			0%  {
+				opacity: 1;
+				transform: translateY(0%);
+			}
+
+			13%{
+				opacity: 1;
+				transform: translateY(0%);
+			}
+
+			14%  {
+				opacity: 0;
+				transform: translateY(0%);
+			}
+
+			80%  {
+				opacity: 0;
+				transform: translateY(113%);
+			}
+
+			81%  {
+				opacity: 0;
+				transform: translateY(113%);
+			}
+
+			99%{
+				opacity: 0;
+				transform: translateY(113%);
+			}
+		
+			100% {
+				opacity: 1;
+				transform: translateY(0%);
+			}
+		}
+
+
+/* screen2 */
+
+		.screen2{
+			position: absolute;
+			width: 100%;
+			height: 170px;
+			z-index: 10000;
+			bottom: 0;
+			left: 0;
+			transform: translateY(113%);
+			opacity: 1;
+			background-image: url(./images/screen2_336_280.png);
+
+			animation-name: screen2;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+		}
+
+
+		/* screen2 */
+
+		@keyframes screen2 {
+			0%  {
+				transform: translateY(113%);
+				opacity: 1;
+				
+			}
+
+			13%  {
+				transform: translateY(113%);
+				opacity: 1;
+			
+			}
+
+			14%  {
+				transform: translateY(0%);
+				opacity: 1;
+				
+			}
+
+			36%  {
+				transform: translateY(0%);
+				opacity: 1;
+				
+			}
+
+			37%  {
+				transform: translateY(0%);
+				opacity: 0;
+				
+			}
+		
+			100% {
+				transform: translateY(0%);
+				opacity: 0;
+			
+			}
+		}
+
+
+	/* title2 */
+
+		.title2{
+			position: absolute;
+			top: 31px;
+			left: 25px;
+
+			transform: translateX(-120%);
+
+			animation-name: title2;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+		}
+
+		.title2 p:first-child{
+			font-size: 36px;
+			color: white;
+			font-weight: bold;
+		}
+
+		.title2 p:last-child{
+			font-size: 16px;
+			opacity: .6;
+			color: white;
+			text-transform: uppercase;
+		}
+
+		/* title2 */
+
+		@keyframes title2 {
+			0%  {
+				transform: translateX(-120%);
+				
+				
+			}
+
+			13%  {
+				transform: translateX(-120%);
+			
+			}
+
+			14%  {
+				transform: translateX(0%);
+				
+			}
+
+			36%  {
+				transform: translateX(0%);
+				
+			}
+
+			37%  {
+				transform: translateX(150%);
+				
+			}
+		
+			100% {
+				transform: translateX(150%);
+			
+			}
+		}
+
+		
+
+	/* img2 */
+
+		.screen2 .block_img{
+			position: absolute;
+			z-index: 100000;
+			right: 133px;
+			bottom: -3px;
+		}
+
+
+/* screen 3 */
+
+		.screen3{
+			position: absolute;
+			width: 100%;
+			height: 170px;
+			z-index: 10000;
+			bottom: 0;
+			left: 0;
+			transform: translateY(113%);
+			opacity: 1;
+			background-image: url(./images/screen3_300_250.png);
+
+			animation-name: screen3;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+		}
+
+
+		/* screen3 */
+
+		@keyframes screen3 {
+			0%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			13%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			14%  {
+				transform: translateY(113%);	
+				opacity: 1;
+			}
+
+			36%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			37%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			59%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			60%  {
+				transform: translateY(0%);
+				opacity: 0;
+			}
+		
+			100% {
+				transform: translateY(0%);
+				opacity: 0;
+			}
+		}
+
+	/* title3 */
+
+		.title3{
+			position: absolute;
+			top: 27px;
+			left: 25px;
+
+			transform: translateX(-120%);
+
+			animation-name: title3;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+		}
+		
+		.title3 p:first-child{
+			font-size: 36px;
+			color: white;
+			font-weight: bold;
+		}
+
+		.title3 p:last-child{
+			font-size: 16px;
+			color: white;
+			opacity: .6;
+			text-transform: uppercase;
+		}
+
+		/* title3 */
+
+		@keyframes title3 {
+			0%  {
+				transform: translateX(-120%);
+				
+				
+			}
+
+			13%  {
+				transform: translateX(-120%);
+			
+			}
+
+			14%  {
+				transform: translateX(-120%);
+				
+			}
+
+			36%  {
+				transform: translateX(-120%);
+				
+			}
+
+			37%  {
+				transform: translateX(0%);	
+			}
+
+			59%  {
+				transform: translateX(0%);
+				
+			}
+
+			60%  {
+				transform: translateX(150%);
+				
+			}
+		
+			100% {
+				transform: translateX(150%);
+			
+			}
+		}
+
+
+
+	/* img3 */
+
+		.screen3 .block_img{
+			position: absolute;
+			z-index: 100000;
+			right: 0;
+			bottom: 0;
+			opacity: 1;
+		}
+
+
+/* screen 4 */
+
+		.screen4{
+			position: absolute;
+			width: 100%;
+			height: 170px;
+			z-index: 10000;
+			bottom: 0;
+			left: 0;
+			transform: translateY(113%);
+			opacity: 1;
+			background-image: url(./images/screen2_336_280.png);
+
+			animation-name: screen4;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+		}
+
+
+		/* screen4 */
+
+		@keyframes screen4 {
+			0%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			13%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			14%  {
+				transform: translateY(113%);
+				opacity: 1;	
+			}
+
+			36%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			37%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			59%  {
+				transform: translateY(113%);
+				opacity: 1;
+			}
+
+			60%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			80%  {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+
+			81%  {
+				transform: translateY(0%);
+				opacity: 0;
+			}
+		
+			100% {
+				transform: translateY(0%);
+				opacity: 0;
+			}
+		}
+
+	/* title4 */
+
+		.title4{
+			position: absolute;
+			top: 25px;
+			left: 25px;
+
+			transform: translateX(-120%);
+
+			animation-name: title4;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+		}
+
+		.title4 p:first-child{
+			font-size: 36px;
+			color: white;
+			font-weight: bold;
+		}
+
+		.title4 p:last-child{
+			font-size: 16px;
+			color: white;
+			opacity: .6;
+			text-transform: uppercase;
+		}
+
+		/* title4 */
+
+		@keyframes title4 {
+			0%  {
+				transform: translateX(-120%);
+			}
+
+			13%  {
+				transform: translateX(-120%);
+			}
+
+			14%  {
+				transform: translateX(-120%);
+			}
+
+			36%  {
+				transform: translateX(-120%);
+			}
+
+			37%  {
+				transform: translateX(-120%);	
+			}
+
+			59%  {
+				transform: translateX(-120%);
+			}
+
+			60%  {
+				transform: translateX(0%);
+			}
+
+			80%  {
+				transform: translateX(0%);
+			}
+
+			81%  {
+				transform: translateX(170%);
+			}
+		
+			100% {
+				transform: translateX(170%);
+			}
+		}
+
+
+	/* block_img_4 */
+
+		.screen4 .block_img{
+			position: absolute;
+			z-index: 100000;
+			right: 0;
+			bottom: -3px;
+		}
+
+/* screen5 */
+
+		.screen5{
+			position: absolute;
+			width: 100%;
+			top: 189px;
+			left: 0px;
+			
+		}
+
+		@keyframes screen5 {
+			0%  {
+				transform: translateX(-113%);
+				
+			}
+
+			13%  {
+				transform: translateX(-113%);
+			
+			}
+
+			14%  {
+				transform: translateX(-113%);	
+			}
+
+			36%  {
+				transform: translateX(-113%);
+				
+			}
+
+			37%  {
+				transform: translateX(-113%);
+				
+			}
+
+			59%  {
+				transform: translateX(-113%);
+				
+			}
+
+			60%  {
+				transform: translateX(-113%);
+				
+			}
+
+			80%  {
+				transform: translateX(-113%);
+				
+			}
+
+			81%  {
+				transform: translateX(0%);
+				
+			}
+		
+			100% {
+				transform: translateX(0%);
+			
+			}
+		}
+
+
+/* title5 */
+
+		.title5{
+			position: absolute;
+			top: 46px;
+			left: 25px;
+
+			transform: translateX(-120%);
+
+			animation-name: title5;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+
+		}
+
+		.title5 p:first-child{
+			font-size: 34px;
+			color: white;
+			font-weight: bold;
+			line-height: 30px;
+		}
+
+		.title5 p:last-child{
+			font-size: 16px;
+			color: white;
+			opacity: .6;
+		}
+
+	/* title5 */
+
+		@keyframes title5 {
+			0%  {
+				transform: translateX(-120%);
+			}
+
+			13%  {
+				transform: translateX(-120%);
+			}
+
+			14%  {
+				transform: translateX(-120%);
+			}
+
+			36%  {
+				transform: translateX(-120%);
+			}
+
+			37%  {
+				transform: translateX(-120%);	
+			}
+
+			59%  {
+				transform: translateX(-120%);
+			}
+
+			60%  {
+				transform: translateX(-120%);
+			}
+
+			80%  {
+				transform: translateX(-120%);
+			}
+
+			81%  {
+				transform: translateX(0%);
+			}
+
+			99%{
+				transform: translateX(0%);
+			}
+		
+			100% {
+				transform: translateX(150%);
+			}
+		}
+
+
+
+	/* button */
+
+		.screen5 .block_button .button{
+			width: 216px;
+			height: 51px;
+			border: 2px solid #38eb51;
+			border-radius: 32px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			background: none;
+			font-size: 18px;
+
+			transform: translateY(250%);
+			animation-name: button;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+
+			opacity: 1;
+			margin: 0 auto;
+		}
+
+
+		@keyframes button {
+			0%  {
+				transform: translateY(250%);
+				background: none;
+				opacity: 1;
+			}
+
+			13%  {
+				transform: translateY(250%);
+				background: none;
+			
+			}
+
+			14%  {
+				transform: translateY(250%);
+				background: none;	
+			}
+
+			36%  {
+				transform: translateY(250%);
+				background: none;
+				
+			}
+
+			37%  {
+				transform: translateY(250%);
+				background: none;
+				
+			}
+
+			59%  {
+				transform: translateY(250%);
+				background: none;
+				
+			}
+
+			60%  {
+				transform: translateY(250%);
+				background: none;
+				
+			}
+
+			80%  {
+				transform: translateY(250%);
+				background: none;
+				
+			}
+
+			81.6%  {
+				transform: translateY(0%);
+				background: none;
+			}
+
+			83%{
+				background: none;
+			}
+
+			83.1%{
+				background: #38eb51;
+			}
+
+			87%{
+				background: #38eb51;
+			}
+
+			87.1%{
+				background: none;
+			}
+
+			91%{
+				background: none;
+			}
+
+			91.1%{
+				background: #38eb51;
+			}
+
+			95%{
+				background: #38eb51;
+			}
+
+			95.1%{
+				background: none;
+			}
+
+			99%{
+				transform: translateY(0%);
+				background: none;
+				opacity: 1;
+			}
+		
+			100% {
+				transform: translateY(0%);
+				background: none;
+				opacity: 0;
+			}
+		}
+
+		
+	</style>
+
+	<div class="wrapper" style=" width: 336px; height: 280px;">
+
+		<div class="block_bg"></div>
+		
+		<div class="logo_block">
+				<img src="./images/logo_336_280.png" alt="">
+		</div>
+
+		<div class="title_main">
+			<p>Инвестируй</p>
+			<p>в токены биржи</p>
+		</div>
+
+
+		<div class="screen2">
+			<div class="block_img"><img src="./images/safe_336_280.png" alt=""></div>
+			
+		</div>
+
+		<div class="title2">
+			<p>958 000$ </p>
+			<p>Уставной фонд проекта</p>
+		</div>
+		
+
+		<div class="screen3">
+			<div class="block_img"><img src="./images/handshake_illustration_336_280.png" alt=""></div>
+		</div>
+
+		<div class="title3">
+			<p>Партнерство</p>
+			<p>с международной <br>биржей OKEx</p>
+		</div>
+
+
+		<div class="screen4">
+			<div class="block_img"><img src="./images/audit_illustration_336_280.png" alt=""></div>
+		</div>
+
+		<div class="title4">
+			<p>Аудит</p> 
+			<p>компанией <br>из Большой четверки</p>
+		</div>
+
+		<div class="screen5">
+			<div class="block_button">
+				<div class="button">КУПИТЬ</div>
+			</div>
+		</div>
+
+		<div class="title5">
+			<p>Выгодные<br> условия</p> 
+			<p>для инвесторов</p>
+		</div>
+
+	</div>
+	
+</body>
+</html>
+
